@@ -856,7 +856,7 @@ body {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url("../../img/quote-icon.svg");
+  background-image: url("./../img/quote-icon.svg");
   width: 5.2em;
   height: 3.6em;
   background-repeat: no-repeat;
@@ -1401,16 +1401,16 @@ body {
   left: -80px;
 }
 .contscts__item-name--phone::before {
-  background-image: url("../../img/phone-icon-white.svg");
+  background-image: url("./../img/phone-icon-white.svg");
 }
 .contscts__item-name--email::before {
-  background-image: url("../../img/email-icon.svg");
+  background-image: url("./../img/email-icon.svg");
 }
 .contscts__item-name--hours::before {
-  background-image: url("../../img/clock-icon.svg");
+  background-image: url("./../img/clock-icon.svg");
 }
 .contscts__item-name--street::before {
-  background-image: url("../../img/map-icon.svg");
+  background-image: url("./../img/map-icon.svg");
 }
 
 .contscts__item-value {
