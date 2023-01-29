@@ -1,0 +1,16 @@
+.map__iframe {
+  height: 200px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .map__iframe {
+    height: 400px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .map__iframe {
+    height: 547px;
+  }
+}

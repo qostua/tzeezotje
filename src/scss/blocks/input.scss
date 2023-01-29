@@ -1,0 +1,50 @@
+.input {
+  width: 100%;
+  border: 1px solid var(--gray);
+  background: white;
+  padding: 8px 8px;
+  @include text(14, 20);
+  color: var(--dark-blue);
+  font-weight: 600;
+  font-family: "Poppins", "Arial", sans-serif;
+
+  &::placeholder {
+    color: var(--dark-gray);
+    font-weight: 400;
+  }
+}
+
+.input__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input__lable {
+  color: black;
+  @include text(10, 20);
+}
+
+.input--textarea {
+  resize: vertical;
+  min-height: 125px;
+}
+
+@media (min-width: $tablet-width) {
+  .input {
+    padding: 28px 16px;
+    @include text(16, 24);
+
+    &::placeholder {
+      font-weight: 400;
+    }
+  }
+
+  .input__wrap {
+    gap: 10px;
+  }
+
+  .input__lable {
+    @include text(16, 32);
+  }
+}

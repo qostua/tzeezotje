@@ -1,0 +1,16 @@
+.logo__img {
+  width: 120px;
+  height: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__img {
+    width: 163px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .logo__img {
+    width: 269px;
+  }
+}

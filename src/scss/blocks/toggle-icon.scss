@@ -1,0 +1,40 @@
+.toggle-icon__rects {
+  transform-origin: 13px 13px;
+
+  transition: 0.5s;
+}
+.toggle-icon__top-rect {
+  transform-origin: 13px 5px;
+
+  transition: 0.25s 0.5s;
+}
+.toggle-icon__middle-rect {
+  transform-origin: 13px 13px;
+
+  transition: 0.25s;
+}
+.toggle-icon__bottom-rect {
+  transform-origin: 13px 21px;
+
+  transition: 0.25s 0.5s;
+}
+.main-nav--open .toggle-icon__top-rect {
+  transform: translate(0, 8px);
+
+  transition: 0.25s 0s;
+}
+.main-nav--open .toggle-icon__middle-rect {
+  transform: rotate(90deg);
+
+  transition: transform 0.25s 0.25s;
+}
+.main-nav--open .toggle-icon__bottom-rect {
+  transform: translate(0, -8px);
+
+  transition: 0.25s 0s;
+}
+.main-nav--open .toggle-icon__rects {
+  transform: rotate(45deg);
+
+  transition: transform 0.5s 0.25s;
+}

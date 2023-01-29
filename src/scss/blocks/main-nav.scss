@@ -1,0 +1,199 @@
+.main-nav {
+
+}
+
+.main-nav--open {
+  z-index: 100;
+  background: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  min-width: 200px;
+  width: 30%;
+  height: 100vh;
+  padding: 130px 30px 30px;
+  top: 0;
+  right: 0;
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.3);
+
+  animation-name: move-to-left;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+
+  .main-nav__toggle {
+    margin-bottom: 30px;
+    position: absolute;
+    top: 55px;
+    right: 207px;
+    animation-name: show-toggle;
+    animation-duration: 0.3s;
+    animation-timing-function: ease;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    transition: 2s;
+  }
+
+  .main-nav__contscts-item--phone {
+    display: block;
+    transition: 2s;
+  }
+}
+
+.main-nav__list {
+  display: none;
+  gap: 45px;
+}
+
+.main-nav__item-link {
+  position: relative;
+
+  &:hover::after {
+    content: '';
+    position: absolute;
+    background-color: var(--beige);
+    height: 2px;
+    width: 100%;
+    bottom: -3px;
+    left: 0;
+
+    animation-name: width-grow;
+    animation-duration: 0.3s;
+    animation-timing-function: ease;
+  }
+}
+
+.main-nav__contscts-item--phone {
+  display: none;
+  animation-name: move-to-right;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+}
+.main-nav__contscts-item--phone .link {
+  @include text(16);
+  @include pseudo('before', 0, 0, 'phone-icon-beign.svg', 24);
+  padding-left: 36px;
+
+  &:hover::before {
+    animation-name: shake-rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  &:active::before {
+    animation-play-state: paused;
+  }
+}
+
+.main-nav__toggle {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  animation-name: hide-toggle;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    width: 471px;
+    justify-content: space-between;
+    @include text(11);
+    flex-direction: row;
+  }
+
+  .main-nav__list {
+    gap: 21px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-nav__contscts-item--phone {
+    display: block;
+  }
+
+  .main-nav__contscts-item--phone .link {
+    padding: 0;
+    @include text(10);
+    @include pseudo('before', 0, -20, 'phone-icon-beign.svg', 16);
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+
+@media (min-width: $desctop-width) {
+  .main-nav {
+    @include text(16);
+    width: 765px;
+  }
+
+  .main-nav__list {
+    gap: 45px;
+  }
+
+  .main-nav__contscts-item--phone .link {
+    @include text(16);
+    @include pseudo('before', 0, -36, 'phone-icon-beign.svg', 24);
+  }
+}
+
+@keyframes shake-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(5deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(5deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes move-to-left {
+  0% {
+    right: -500px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes show-toggle {
+  0% {
+    margin-bottom: 0;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  100% {
+    margin-bottom: 30px;
+    position: absolute;
+    top: 55px;
+    right: 207px;
+  }
+}
+
+@keyframes width-grow {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

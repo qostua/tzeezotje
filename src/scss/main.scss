@@ -1,0 +1,30 @@
+@import "mixins";
+@import "variables";
+
+@import "service/reset";
+@import "service/visuallyhidden";
+@import "service/skiptocontent";
+@import "service/font";
+@import "service/focus";
+@import "service/container";
+
+@import "blocks/btn.scss";
+@import "blocks/link.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/promo.scss";
+@import "blocks/networks.scss";
+@import "blocks/events.scss";
+@import "blocks/reviews.scss";
+@import "blocks/logo.scss";
+@import "blocks/toggle-icon.scss";
+@import "blocks/modal-reserve";
+@import "blocks/input.scss";
+@import "blocks/food.scss";
+@import "blocks/photos.scss";
+@import "blocks/contscts.scss";
+@import "blocks/feedback.scss";
+@import "blocks/main-footer";
+@import "blocks/map";
+
+@import "libs";
