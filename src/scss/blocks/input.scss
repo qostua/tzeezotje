@@ -7,6 +7,7 @@
   color: var(--dark-blue);
   font-weight: 600;
   font-family: "Poppins", "Arial", sans-serif;
+  box-sizing: border-box;
 
   &::placeholder {
     color: var(--dark-gray);
