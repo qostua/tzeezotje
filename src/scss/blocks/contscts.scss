@@ -27,16 +27,16 @@
   }
 
   &--phone::before {
-    background-image: url('../../img/phone-icon-white.svg');
+    background-image: url('./../img/phone-icon-white.svg');
   }
   &--email::before {
-    background-image: url('../../img/email-icon.svg');
+    background-image: url('./../img/email-icon.svg');
   }
   &--hours::before {
-    background-image: url('../../img/clock-icon.svg');
+    background-image: url('./../img/clock-icon.svg');
   }
   &--street::before {
-    background-image: url('../../img/map-icon.svg');
+    background-image: url('./../img/map-icon.svg');
   }
 }
 
