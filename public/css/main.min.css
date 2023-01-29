@@ -118,7 +118,6 @@ body {
 }
 
 :focus-visible {
-  outline: 0;
   outline: 2px solid #1D223C;
 }
 
@@ -501,7 +500,7 @@ body {
 
 @media (min-width: 785px) {
   .promo {
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
   .promo__time {
     margin-bottom: 16px;
@@ -555,7 +554,7 @@ body {
     letter-spacing: 1px;
   }
   .promo__footer {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .promo__photo {
     z-index: -1;
@@ -823,6 +822,9 @@ body {
   color: white;
   height: 400px;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .reviews__item {
