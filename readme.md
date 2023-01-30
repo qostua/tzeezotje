@@ -4,6 +4,8 @@
 
 **project tegs**: `HTML5`, `CSS3`, `Flex`, `Grid`, `Adaptive`, `Retina`, `Gulp`, `webpack`
 
+**lighthouse scores**: ✅ Performance `100` | ✅ Best Practices `100`
+
 ![Интерфейс сайта](https://user-images.githubusercontent.com/79047487/215320065-ff271922-248e-46d1-aae6-fac96f381b7b.png)
 
 Сайт нидерландского ресторана. Можно посмотреть меню, интерьер и забронировать столик
