@@ -3,12 +3,14 @@
 }
 
 .feedback__title {
-  @include text(25, 40, 700);
   margin-bottom: 15px;
+
+  @include text(25, 40, 700);
 }
 
 .feedback__form {
   display: grid;
+
   gap: 20px
 }
 
@@ -22,8 +24,9 @@
   }
 
   .feedback__title {
-    @include text(25, 40, 700);
     margin-bottom: 15px;
+
+    @include text(25, 40, 700);
   }
 
   .feedback__form {
@@ -41,8 +44,9 @@
   }
 
   .feedback__title {
-    @include text(48, 88, 700);
     margin-bottom: 30px;
+
+    @include text(48, 88, 700);
   }
 
   .feedback__form {

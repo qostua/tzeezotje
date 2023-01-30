@@ -1,11 +1,13 @@
 .main-footer {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
-  gap: 10px;
-  align-items: center;
+
   margin-top: 20px;
   margin-bottom: 200px;
+
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
 }
 
 .main-footer__networks {
@@ -14,9 +16,11 @@
 
 @media (min-width: $tablet-width) {
   .main-footer {
+    flex-direction: row;
+
     margin-top: 30px;
     margin-bottom: 300px;
-    flex-direction: row;
+
     gap: 0;
   }
 }

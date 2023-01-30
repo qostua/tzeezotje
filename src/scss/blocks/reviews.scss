@@ -1,64 +1,82 @@
 .reviews {
-  background-color: var(--deep-blue);
-  color: white;
+  display: flex;
+
   height: 400px;
   margin-bottom: 30px;
-  display: flex;
+
+  color: white;
+  background-color: var(--deep-blue);
+
   align-items: center;
   justify-content: center;
 }
 
 .reviews__item {
   display: flex;
+
   justify-content: center;
 }
 .reviews__item-inner {
-  width: 67%;
   display: flex;
   flex-direction: column;
+
+  width: 67%;
+
   justify-content: center;
 }
 
 .reviews__item-title {
-  @include text(16, 20, 600);
+  position: relative;
+
   margin-bottom: 6px;
   padding-top: 77px;
+
   text-align: center;
+
   color: var(--beige);
 
-  position: relative;
+  @include text(16, 20, 600);
   &::before {
-    font-size: 16px;
     position: absolute;
-    content: '';
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
-    background-image: url('./../img/quote-icon.svg');
+
     width: 5.2em;
     height: 3.6em;
+
+    content: '';
+    transform: translateX(-50%);
+
+    background-image: url('./../img/quote-icon.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+
+    font-size: 16px;
   }
 }
 
 .reviews__item-text {
-  @include text(10, 18);
   margin-bottom: 9px;
+
   text-align: center;
+
+  @include text(10, 18);
 }
 
 .reviews__item-author {
-  @include text(10, 20, 600);
-  letter-spacing: 3px;
   text-align: center;
+  letter-spacing: 3px;
   text-transform: uppercase;
+
   color: var(--beige);
+
+  @include text(10, 20, 600);
 }
 
 .reviews__swiper-button::after {
   color: var(--beige);
+
   font-size: 35px !important;
 }
 
@@ -81,22 +99,25 @@
   }
 
   .reviews__item-title {
-    @include text(20, 30, 600);
     margin-bottom: 9px;
     padding-top: 77px;
+
+    @include text(20, 30, 600);
     &::before {
       font-size: 16px;
     }
   }
 
   .reviews__item-text {
-    @include text(11, 28);
     margin-bottom: 9px;
+
+    @include text(11, 28);
   }
 
   .reviews__item-author {
-    @include text(11, 20, 600);
     letter-spacing: 3px;
+
+    @include text(11, 20, 600);
   }
 
   .reviews__swiper-button::after {
@@ -116,22 +137,25 @@
   }
 
   .reviews__item-title {
-    @include text(36, 40, 600);
     margin-bottom: 20px;
     padding-top: 92px;
+
+    @include text(36, 40, 600);
     &::before {
       font-size: 16px;
     }
   }
 
   .reviews__item-text {
-    @include text(16, 40);
     margin-bottom: 31px;
+
+    @include text(16, 40);
   }
 
   .reviews__item-author {
-    @include text(24, 40, 600);
     letter-spacing: 6px;
+
+    @include text(24, 40, 600);
   }
 
   .reviews__swiper-button::after {

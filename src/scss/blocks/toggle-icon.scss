@@ -1,40 +1,32 @@
 .toggle-icon__rects {
+  transition: 0.5s;
   transform-origin: 13px 13px;
-
-  transition: 0.5s;
 }
 .toggle-icon__top-rect {
+  transition: 0.25s 0.5s;
   transform-origin: 13px 5px;
-
-  transition: 0.25s 0.5s;
 }
 .toggle-icon__middle-rect {
+  transition: 0.25s;
   transform-origin: 13px 13px;
-
-  transition: 0.25s;
 }
 .toggle-icon__bottom-rect {
+  transition: 0.25s 0.5s;
   transform-origin: 13px 21px;
-
-  transition: 0.25s 0.5s;
 }
 .main-nav--open .toggle-icon__top-rect {
+  transition: 0.25s 0s;
   transform: translate(0, 8px);
-
-  transition: 0.25s 0s;
 }
 .main-nav--open .toggle-icon__middle-rect {
+  transition: transform 0.25s 0.25s;
   transform: rotate(90deg);
-
-  transition: transform 0.25s 0.25s;
 }
 .main-nav--open .toggle-icon__bottom-rect {
+  transition: 0.25s 0s;
   transform: translate(0, -8px);
-
-  transition: 0.25s 0s;
 }
 .main-nav--open .toggle-icon__rects {
+  transition: transform 0.5s 0.25s;
   transform: rotate(45deg);
-
-  transition: transform 0.5s 0.25s;
 }

@@ -1,8 +1,9 @@
 .photos {
+  margin-bottom: 30px;
   padding-top: 40px;
-  background-image: linear-gradient(to bottom, var(--deep-blue) 67%, transparent 67%);;
+
   color: white;
-  margin-bottom: 30px;
+  background-image: linear-gradient(to bottom, var(--deep-blue) 67%, transparent 67%);;
 }
 
 .photos_description {
@@ -10,8 +11,9 @@
 }
 
 .photos__title {
-  @include text(25, 40, 700);
   margin-bottom: 3px;
+
+  @include text(25, 40, 700);
 }
 
 .photos__text {
@@ -19,16 +21,19 @@
 }
 
 .photos__inner {
-  margin-bottom: 20px;
   display: flex;
+  flex-direction: column;
+
+  margin-bottom: 20px;
+
   justify-content: space-between;
   align-items: center;
-  flex-direction: column;
   gap: 15px;
 }
 
 .photos_nav {
   display: flex;
+
   gap: 10px;
 }
 
@@ -42,8 +47,9 @@
 }
 
 .photos__swiper-button {
-  color: var(--beige);
   cursor: pointer;
+
+  color: var(--beige);
 
 }
 
@@ -58,8 +64,8 @@
 
 @media (min-width: $tablet-width) {
   .photos {
+    margin-bottom: 50px;
     padding-top: 60px;
-    margin-bottom: 50px;
   }
 
   .photos_description {
@@ -67,8 +73,9 @@
   }
 
   .photos__title {
-    @include text(30, 40, 700);
     margin-bottom: 5px;
+
+    @include text(30, 40, 700);
   }
 
   .photos__text {
@@ -76,8 +83,10 @@
   }
 
   .photos__inner {
-    margin-bottom: 30px;
     flex-direction: row;
+
+    margin-bottom: 30px;
+
     gap: 0;
   }
 
@@ -97,8 +106,8 @@
 
 @media (min-width: $desctop-width) {
   .photos {
+    margin-bottom: 100px;
     padding-top: 88px;
-    margin-bottom: 100px;
   }
 
   .photos_description {
@@ -106,8 +115,9 @@
   }
 
   .photos__title {
-    @include text(48, 50, 700);
     margin-bottom: 11px;
+
+    @include text(48, 50, 700);
   }
 
   .photos__text {

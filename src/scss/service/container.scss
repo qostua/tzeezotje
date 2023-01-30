@@ -1,6 +1,5 @@
 .container {
   box-sizing: border-box;
-
   max-width: 280px;
   margin-right: auto;
   margin-left: auto;
@@ -8,9 +7,10 @@
 
 
 .container--two-col {
+  display: flex;
   flex-direction: column;
+
   gap: 15px;
-  display: flex;
   justify-content: space-between;
 }
 @media (min-width: $tablet-width) {
@@ -20,6 +20,7 @@
 
   .container--two-col {
     flex-direction: row;
+
     gap: 30px;
   }
 }

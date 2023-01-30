@@ -1,23 +1,23 @@
 .button {
   display: inline-block;
 
-  padding: 10px;
   min-width: 185px;
+  padding: 10px;
 
   cursor: pointer;
   text-decoration: none;
 
   color: white;
-  background-color: var(--deep-blue);
   border: none;
+  background-color: var(--deep-blue);
 
   @include text(14, 24, 500);
 
   &:hover {
     animation-name: scale-toggle;
     animation-duration: 1s;
-    animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
   }
 
   &:active {
@@ -27,8 +27,8 @@
 
 @media (min-width: $tablet-width) {
   .button {
+    min-width: 166px;
     padding: 20px;
-    min-width: 166px;
 
     @include text(16, 24, 500);
   }
@@ -37,8 +37,8 @@
 
 @media (min-width: $desctop-width) {
   .button {
+    min-width: 270px;
     padding: 38px;
-    min-width: 270px;
 
     @include text(24, 24, 500);
   }
@@ -55,4 +55,3 @@
     transform: scale(1);
   }
 }
-

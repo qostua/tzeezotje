@@ -1,29 +1,34 @@
 .contscts__title {
-  @include text(25, 40, 700);
   margin-bottom: 15px;
+
+  @include text(25, 40, 700);
 }
 
 .contscts__list {
   display: flex;
   flex-direction: column;
+
   padding-left: 80px;
 }
 
 .contscts__item-name {
-  @include text(16, 32);
-
   position: relative;
+
+  @include text(16, 32);
   &::before {
     position: absolute;
-    content: '';
-    width: 64px;
-    height: 64px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: var(--beige);
-    border-radius: 50%;
     top: 0;
     left: -80px;
+
+    width: 64px;
+    height: 64px;
+
+    content: '';
+
+    border-radius: 50%;
+    background-color: var(--beige);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &--phone::before {
@@ -41,14 +46,16 @@
 }
 
 .contscts__item-value {
-  @include text(16, 32);
   margin-bottom: 20px;
+
+  @include text(16, 32);
 }
 
 @media (min-width: $tablet-width) {
   .contscts__title {
-    @include text(25, 40, 700);
     margin-bottom: 15px;
+
+    @include text(25, 40, 700);
   }
 
   .contscts__list {
@@ -59,23 +66,26 @@
     @include text(16, 32);
 
     &::before {
-      width: 64px;
-      height: 64px;
       top: 0;
       left: -80px;
+
+      width: 64px;
+      height: 64px;
     }
   }
 
   .contscts__item-value {
-    @include text(16, 32);
     margin-bottom: 40px;
+
+    @include text(16, 32);
   }
 }
 
 @media (min-width: $desctop-width) {
   .contscts__title {
-    @include text(48, 88, 700);
     margin-bottom: 35px;
+
+    @include text(48, 88, 700);
   }
 
   .contscts__list {
@@ -86,15 +96,17 @@
     @include text(16, 32);
 
     &::before {
-      width: 64px;
-      height: 64px;
       top: 0;
       left: -80px;
+
+      width: 64px;
+      height: 64px;
     }
   }
 
   .contscts__item-value {
-    @include text(16, 32);
     margin-bottom: 40px;
+
+    @include text(16, 32);
   }
 }
