@@ -14,7 +14,20 @@
 <header class="main-header container">
   <a href="index.html" class="logo link">
     <picture>
-      <source media="(min-width: 1200px)" srcset="./img/logo.png, ./img/logo@2x.png 2x">
+      <source media="(min-width: 1200px)"
+              srcset="./img/logo.webp, ./img/logo@2x.webp 2x"
+              type="image/webp">
+      <source media="(max-width: 1199px)"
+              srcset="./img/logo-color.webp, ./img/logo-color@2x.webp 2x"
+              type="image/webp">
+
+      <source media="(min-width: 1200px)"
+              srcset="./img/logo.webp, ./img/logo@2x.webp 2x"
+              type="image/webp">
+      <source media="(max-width: 1199px)"
+              srcset="./img/logo-color.png, ./img/logo-color@2x.png 2x"
+              type="image/png">
+
       <img class="logo__img" src="./img/logo-color.png" srcset="./img/logo-color@2x.png 2x" alt="Tzeezotje logo" width="269" height="55">
     </picture>
   </a>
@@ -58,7 +71,11 @@
       </ul>
     </div>
     <div class="promo__photo">
-      <img class="promo__photo-img" src="./img/promo-photo.jpg" srcset="./img/promo-photo@2x.jpg 2x" alt="Restaurant foto" width="1920" height="901">
+
+      <picture>
+        <source type="image/webp"  srcset="./img/promo-photo.webp 1x, ./img/promo-photo@2x.webp 2x ">
+        <img class="promo__photo-img" src="./img/promo-photo.jpg" srcset="./img/promo-photo@2x.jpg 2x" alt="Restaurant foto" width="1920" height="901">
+      </picture>
     </div>
   </section>
 
@@ -104,8 +121,14 @@
     </ul>
 
     <div class="events__pictures">
-      <img class="events__picture events__picture--left" src="./img/event-photo-1.png" srcset="./img/event-photo-1@2x.png 2x" alt="Restaurant foto" width="323" height="486" loading="lazy">
-      <img class="events__picture events__picture--right" src="./img/event-photo-2.png" srcset="./img/event-photo-2@2x.png 2x" alt="Restaurant foto" width="323" height="486" loading="lazy">
+      <picture class="events__picture--left">
+        <source type="image/webp"  srcset="./img/event-photo-1.webp 1x, ./img/event-photo-1@2x.webp 2x ">
+        <img class="events__picture" src="./img/event-photo-1.png" srcset="./img/event-photo-1@2x.png 2x" alt="Restaurant foto 1" width="323" height="486" loading="lazy">
+      </picture>
+      <picture class="events__picture--right">
+        <source type="image/webp"  srcset="./img/event-photo-2.webp 1x, ./img/event-photo-2@2x.webp 2x ">
+        <img class="events__picture" src="./img/event-photo-2.png" srcset="./img/event-photo-2@2x.png 2x" alt="Restaurant foto 2" width="323" height="486" loading="lazy">
+      </picture>
     </div>
   </section>
 
@@ -154,21 +177,33 @@
           <h3 class="food__item-title">Lekker Eten</h3>
           <p class="food__item-text">Eten gaat niet over indruk maken op mensen. Het gaat erom dat ze zich op hun gemak voelen. Dat is onze filosofie, goed eten in een goede sfeer.</p>
         </div>
-        <img class="food__item-photo" src="./img/food-photo-1.jpg" srcset="./img/food-photo-1@2x.jpg 2x" alt="Voedsel foto 1" width="670" height="560" loading="lazy">
+
+        <picture>
+          <source type="image/webp"  srcset="./img/food-photo-1.webp 1x, ./img/food-photo-1@2x.webp 2x ">
+          <img class="food__item-photo" src="./img/food-photo-1.jpg" srcset="./img/food-photo-1@2x.jpg 2x" alt="Voedsel foto 1" width="670" height="560" loading="lazy">
+        </picture>
       </li>
       <li class="food__item food__item--pic-first">
         <div class="food__item-description">
           <h3 class="food__item-title">Toffe Ambiance</h3>
           <p class="food__item-text">Het creëren van de juiste sfeer is zeer belangrijk voor ons. We nemen onze tijd om te zorgen dat alle elementen bijdragen aan de juiste setting.</p>
         </div>
-        <img class="food__item-photo" src="./img/food-photo-2.jpg" srcset="./img/food-photo-2@2x.jpg 2x" alt="Voedsel foto 2" width="670" height="560" loading="lazy">
+
+        <picture>
+          <source type="image/webp"  srcset="./img/food-photo-2.webp 1x, ./img/food-photo-2@2x.webp 2x ">
+          <img class="food__item-photo" src="./img/food-photo-2.jpg" srcset="./img/food-photo-2@2x.jpg 2x" alt="Voedsel foto 2" width="670" height="560" loading="lazy">
+        </picture>
       </li>
       <li class="food__item">
         <div class="food__item-description">
           <h3 class="food__item-title">Lekkere Cocktails</h3>
           <p class="food__item-text">Ons doel is simpel: een gastvrije plek bieden waar u kunt genieten van een onvergetelijke cocktail, een goed gesprek en lekker eten.</p>
         </div>
-        <img class="food__item-photo" src="./img/food-photo-3.jpg" srcset="./img/food-photo-3@2x.jpg 2x" alt="Voedsel foto 3" width="670" height="560" loading="lazy">
+
+        <picture>
+          <source type="image/webp"  srcset="./img/food-photo-3.webp 1x, ./img/food-photo-3@2x.webp 2x ">
+          <img class="food__item-photo" src="./img/food-photo-3.jpg" srcset="./img/food-photo-3@2x.jpg 2x" alt="Voedsel foto 3" width="670" height="560" loading="lazy">
+        </picture>
       </li>
     </ul>
   </section>
@@ -199,13 +234,22 @@
     <div class="swiper photos__swiper">
       <div class="swiper-wrapper photos__swiper-wrapper">
         <div class="swiper-slide photos__slide">
-          <img class="photos__slide-img" src="./img/photo-slider-1.jpg" srcset="./img/photo-slider-1@2x.jpg 2x" alt="Sfeerfoto" width="969" loading="lazy">
+          <picture class="photos__slide-img-wrap">
+            <source type="image/webp"  srcset="./img/photo-slider-1.webp 1x, ./img/photo-slider-1@2x.webp 2x ">
+            <img class="photos__slide-img" src="./img/photo-slider-1.jpg" srcset="./img/photo-slider-1@2x.jpg 2x" alt="Sfeerfoto" width="969" height="646" loading="lazy">
+          </picture>
         </div>
         <div class="swiper-slide photos__slide">
-          <img class="photos__slide-img" src="./img/photo-slider-2.jpg" srcset="./img/photo-slider-2@2x.jpg 2x" alt="Sfeerfoto" width="970" loading="lazy">
+          <picture class="photos__slide-img-wrap">
+            <source type="image/webp"  srcset="./img/photo-slider-2.webp 1x, ./img/photo-slider-2@2x.webp 2x ">
+            <img class="photos__slide-img" src="./img/photo-slider-2.jpg" srcset="./img/photo-slider-2@2x.jpg 2x" alt="Sfeerfoto" width="970" height="646" loading="lazy">
+          </picture>
         </div>
         <div class="swiper-slide photos__slide">
-          <img class="photos__slide-img" src="./img/photo-slider-3.jpg" srcset="./img/photo-slider-3@2x.jpg 2x" alt="Sfeerfoto" width="970" loading="lazy">
+          <picture class="photos__slide-img-wrap">
+            <source type="image/webp"  srcset="./img/photo-slider-3.webp 1x, ./img/photo-slider-3@2x.webp 2x ">
+            <img class="photos__slide-img" src="./img/photo-slider-3.jpg" srcset="./img/photo-slider-3@2x.jpg 2x" alt="Sfeerfoto" width="970" height="647" loading="lazy">
+          </picture>
         </div>
       </div>
     </div>
@@ -268,7 +312,10 @@
 
   <footer class="main-footer container">
     <a href="index.html" class="logo link">
-      <img class="logo__img" src="./img/logo-color.png" srcset="./img/logo-color@2x.png 2x" alt="Tzeezotje logo" width="269" height="55" loading="lazy">
+      <picture class="photos__slide-img-wrap">
+        <source type="image/webp"  srcset="./img/logo-color.webp 1x, ./img/logo-color@2x.webp 2x ">
+        <img class="logo__img" src="./img/logo-color.png" srcset="./img/logo-color@2x.png 2x" alt="Tzeezotje logo" width="269" height="55" loading="lazy">
+      </picture>
     </a>
 
     <ul class="main-footer__networks networks">
